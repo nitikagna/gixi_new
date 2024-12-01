@@ -1,0 +1,91 @@
+.carousel-container {
+  width: 100vw;
+  /* margin: 0 auto; */
+  padding: 40px 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.carousel-title {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f1935c;
+  padding-left: 33px;
+}
+
+.carousel-item {
+  width: 280px; 
+  height: 250px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #f1935c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.carousel-content {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 26px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.next-arrow {
+  right: 10px;
+}
+
+.prev-arrow {
+  left: 10px;
+}
+
+.custom-arrow:hover {
+  background-color: #f1935c;
+}
+
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  gap: 30px; 
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+
+.carousel-buttons{
+  margin-top: 150px;
+}
+
+.carousel-button{
+  margin-left: 20px;
+  height: 40px;
+  width: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: #f1935c;
+  background-color: #f1935c;
+  border-radius: 10px;
+}

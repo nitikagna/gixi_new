@@ -1,0 +1,108 @@
+/* Overall Dashboard Container */
+.dashboard-container {
+    width: 100vw;
+    height: 100vh; /* Ensures it takes the full viewport height */
+    padding: 20px 0; /* Remove bottom overflow */
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Include padding in width/height calculation */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Header Section */
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px); /* Same width as overview and parent div */
+    margin: 0 auto 20px; /* Adds gap below the header */
+    border-bottom: 1px solid #e8e8e8;
+    box-sizing: border-box;
+  }
+  
+  .dashboard-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .dashboard-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  /* Subheader Section */
+  .dashboard-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; /* Increased left and right padding */
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 97%; /* Full width with padding handling the space */
+    margin: 0 auto; /* Center align */
+    border-bottom: 1px solid #e8e8e8;
+    box-sizing: border-box; /* Ensure padding is part of the width */
+  }
+  
+  .dashboard-overview {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+   
+  }
+  
+  .dashboard-date {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Parent Div for Child Elements */
+  .dashboard-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px 40px; /* Increased left and right padding */
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    width: 97%; /* Full width with padding handling the space */
+    margin: 0 auto; /* Center align */
+    box-sizing: border-box; /* Ensure padding is part of the width */
+  }
+  
+  /* Child Divs */
+  .dashboard-item {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-item-title {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    border-bottom: dashed #333;
+  }
+  
+  .dashboard-item-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dashboard-item-subvalue {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    display: block;
+  }
+  
